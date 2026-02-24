@@ -1,6 +1,4 @@
-import fetchApi from './api/axios'
 import './App.css'
-import Home from './pages/Home'
 import AppRoutes from './routes/AppRoutes'
 
 function App() {
