@@ -1,4 +1,3 @@
-import React from 'react'
 import type { PokemonList } from "../types/pokemon"
 import { useNavigate } from 'react-router-dom'
 
