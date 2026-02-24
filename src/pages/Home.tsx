@@ -35,9 +35,11 @@ const Home = () => {
                 <p>Carregando...</p>
             ) : (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    {pokemonsFiltered.map((pokemon) => (
+                   {pokemonsFiltered.length === 0 ? (<p className="col-span-full text-center">Nenhum Pokemon Encontrado...</p>) : (
+                    pokemonsFiltered.map((pokemon) => (
                         <PokemonCard key={pokemon.name} pokemon={pokemon} />
-                    ))}
+                    ))
+                   )}
                 </div>
             )}
         </div>
